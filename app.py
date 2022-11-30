@@ -3,7 +3,7 @@
 import streamlit as st
 
 
-st.title("Check number for Odd/Even")
+st.title("TDS_Assignment_8 : Check number for Odd/Even")
 
 st.subheader("Write here the number")
 
