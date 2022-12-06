@@ -11,11 +11,15 @@ x = st.number_input("Enter Number")
 
 result = st.button("click here")
 if(result==True):
-    if(x%2==0):
-        st.write(f"""{x} *is Even Number*""")
+    frac, whole = math.modf(x)    
+    if (frac == 0.0):
+        if(x%2==0):
+            st.write(f"""{x} *is Even Number*""")
+        else:
+            st.write(f"""{x} *is Odd Number*""")
     else:
-        st.write(f"""{x} *is Odd Number*""")
-        
+        st.write(f"""{x} is neither even nor odd. It is should be whole number""")
+
         
         
 st.subheader("Made by : 21f1005966")
